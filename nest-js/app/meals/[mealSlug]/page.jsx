@@ -18,7 +18,7 @@ export default function MealDetailsPage({ params }) {
       <header className={classes.header}>
         <div className={classes.image}>
           <Image
-            src={`https://${process.env.HOSTNAME}${meal.image}`}
+            src={`https://${process.env.HOSTNAME}/${meal.image}`}
             alt={meal.title}
             fill
           />
