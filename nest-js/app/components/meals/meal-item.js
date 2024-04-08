@@ -9,7 +9,7 @@ export default function MealItem({ title, slug, image, summary, creator }) {
       <header>
         <div className={classes.image}>
           <Image
-            src={`https://starlighttears.s3.us-east-2.amazonaws.com/${image}`}
+            src={`https://${process.env.HOSTNAME}${image}`}
             alt={title}
             fill
           />
